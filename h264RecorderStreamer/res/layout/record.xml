@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is /res/layout-land/main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/recording"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Press initialize to begin"
+        android:textColor="#FF0000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/initBtn"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:enabled="false"
+            android:onClick="doClick"
+            android:text="Initialize" />
+
+        <Button
+            android:id="@+id/beginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="doClick"
+            android:text="Stream" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:onClick="doClick"
+            android:text="Stop" />
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

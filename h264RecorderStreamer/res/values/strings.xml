@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">h264 Streamer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">h264 Streamer</string>
+    <string name="record_activity">Record</string>
+    <string name="title_activity_stream_dash">StreamDASH</string>
+    <string name="title_activity_dashplayer">h264 Streamer</string>
+
+</resources>
